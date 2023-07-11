@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculatoe</title>
+    <style>
+     body{
+       background-color: rgb(57, 32, 33);
+       
+       background-image: url(https://c4.wallpaperflare.com/wallpaper/152/222/393/mickey-mouse-cartoon-wallpaper-hd-for-mobile-phones-and-laptops-wallpaper-preview.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     }
+     .container{
+       background-color: aliceblue;
+       text-align:center;
+       height: 350px;
+       width: 600px;
+       margin: auto;
+       
+       
+        
+        }
+        .header{
+            background-color: red;
+            height: 30px;
+            width: 600px;
+            margin: auto;
+            margin-bottom:auto;
+            align-items: center;
+            margin-top:100px;
+             padding: auto;
+            
+             }
+             .header h3{
+                text-align: center;
+                margin: auto;
+             }
+             .content{
+                margin: auto;
+                margin-top: 80px;
+
+             }
+             .frm{
+                display: inline-block;
+                text-align: center;
+             }
+             .btn{
+                margin: 30px;
+                
+             }
+             .btn button{
+                background-color: #e80ea7; 
+                width: 150px;    
+                height: 20px;    
+                border-radius: 13px;  
+             }
+             .footer{
+                background-color: red;
+                 height: 30px;
+                 width: 600px;
+                 margin-top: 100px;
+                 
+
+             }
+             .footer h3{
+                text-align: center;
+                padding: auto;
+             }
+             .per{
+                width: 30px;
+             }
+             marquee{
+                color: #e80ea7;
+                font-size:25px;
+             }
+             
+             
+    </style>
+</head>
+<body>
+    <marquee>Find your love Percentage!!</marquee>
+    <div class="container">
+        <div class="header">
+            <H3>LOVE</H3>
+        </div>
+      <div class="content">
+        <form class="frm">
+            <input type="text" placeholder="Your Name">
+            <span>+</span>
+            <input type="text" placeholder="Partner Name">
+            </form>
+            <div class="btn">
+           <button onclick="loveper()">Click</button>
+            </div>
+            Your love percentage is:<input type="text" id="love" placeholder="____" class="per">
+       
+
+      </div>
+      <div class="footer">
+        <h3>God Bless Your Relationship</h3>
+      </div>
+    </div>
+    <script>
+        function loveper(){
+            let data=Math.floor(Math.random()*100)+"%";
+            document.getElementById('love').value=data;
+        }
+    
+       
+
+            
+        
+    </script>
+    
+</body>
+</html>
